@@ -41,7 +41,7 @@
     }
 
     // Initial fetch
-    document.addEventListener('DOMContentLoaded', function () {
+    $(document).ready(function () {
         fetchPlayerCount();
         // Fetch every 10 seconds
         setInterval(fetchPlayerCount, 10000);

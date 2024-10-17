@@ -3,128 +3,130 @@
     $Page->Title = "Maps";
     $Page->Start();
 ?>
-<a href="maps\Agape.png">Agape</a><br />
-<a href="maps\Arachnos.png">Arachnos</a><br />
-<a href="maps\Arkham legion.png">Arkham legion</a><br />
-<a href="maps\Arkham Swamps.png">Arkham Swamps</a><br />
-<a href="maps\Arkham.png">Arkham</a><br />
-<a href="maps\Astoria.png">Astoria</a><br />
-<a href="maps\Astral Plane.png">Astral Plane</a><br />
-<a href="maps\Avalon.png">Avalon</a><br />
-<a href="maps\Beholder Corps.png">Beholder Corps</a><br />
-<a href="maps\Blight.png">Blight</a><br />
-<a href="maps\Calinth.png">Calinth</a><br />
-<a href="maps\Camelot.png">Camelot</a><br />
-<a href="maps\Castle of Giants.png">Castle of Giants</a><br />
-<a href="maps\Castle of Trials.png">Castle of Trials</a><br />
-<a href="maps\Catacombs.png">Catacombs</a><br />
-<a href="maps\Caverns of Reflection.png">Caverns of Reflection</a><br />
-<a href="maps\Ceial's Shrine.png">Ceial's Shrine</a><br />
-<a href="maps\Celestial Area.png">Celestial Area</a><br />
-<a href="maps\Chapel.png">Chapel</a><br />
-<a href="maps\Ciquala's Lair.png">Ciquala's Lair</a><br />
-<a href="maps\Cliffs of Kylos.png">Cliffs of Kylos</a><br />
-<a href="maps\Crusader Battlefield.png">Crusader Battlefield</a><br />
-<a href="maps\Dargaard Keep.png">Dargaard Keep</a><br />
-<a href="maps\Dark Forest.png">Dark Forest</a><br />
-<a href="maps\Day Care.png">Day Care</a><br />
-<a href="maps\Dead Forest.png">Dead Forest</a><br />
-<a href="maps\Destroyer's Hall.png">Destroyer's Hall</a><br />
-<a href="maps\Drothuun's Tower.png">Drothuun's Tower</a><br />
-<a href="maps\Drow City.png">Drow City</a><br />
-<a href="maps\Drow Enclaves.png">Drow Enclaves</a><br />
-<a href="maps\Dwarven Kingdom.png">Dwarven Kingdom</a><br />
-<a href="maps\Dying Forest.are.png">Dying Forest.are</a><br />
-<a href="maps\Dylan's Area.png">Dylan's Area</a><br />
-<a href="maps\Eastern Road.png">Eastern Road</a><br />
-<a href="maps\Eastern Shatar Road.png">Eastern Shatar Road</a><br />
-<a href="maps\Elemental Temple.png">Elemental Temple</a><br />
-<a href="maps\Emerald Forest.png">Emerald Forest</a><br />
-<a href="maps\Empire Cabal.png">Empire Cabal</a><br />
-<a href="maps\Encampment of the Trium.png">Encampment of the Trium</a><br />
-<a href="maps\Enforcer Cabal.png">Enforcer Cabal</a><br />
-<a href="maps\Evil's Abode.png">Evil's Abode</a><br />
-<a href="maps\Forest of Myth Drannor.png">Forest of Myth Drannor</a><br />
-<a href="maps\Forest Road.png">Forest Road</a><br />
-<a href="maps\Galaxy.png">Galaxy</a><br />
-<a href="maps\Gangland.png">Gangland</a><br />
-<a href="maps\Giant Village.png">Giant Village</a><br />
-<a href="maps\Goblin Village.png">Goblin Village</a><br />
-<a href="maps\Graveyard.png">Graveyard</a><br />
-<a href="maps\Haon Dor.png">Haon Dor</a><br />
-<a href="maps\Hell.png">Hell</a><br />
-<a href="maps\High Tower.png">High Tower</a><br />
-<a href="maps\Knight Cabal.png">Knight Cabal</a><br />
-<a href="maps\Lich Tower.png">Lich Tower</a><br />
-<a href="maps\Limbo.png">Limbo</a><br />
-<a href="maps\Machine Dreams.png">Machine Dreams</a><br />
-<a href="maps\Mad Man.png">Mad Man</a><br />
-<a href="maps\Mahn-Tor.png">Mahn-Tor</a><br />
-<a href="maps\Marsh.png">Marsh</a><br />
-<a href="maps\Mausoleum.png">Mausoleum</a><br />
-<a href="maps\Miden'nir.png">Miden'nir</a><br />
-<a href="maps\Midgaard.png">Midgaard</a><br />
-<a href="maps\Moria.png">Moria</a><br />
-<a href="maps\mud school.png">mud school</a><br />
-<a href="maps\Naiadia.png">Naiadia</a><br />
-<a href="maps\Neraka.png">Neraka</a><br />
-<a href="maps\New area.png">New area</a><br />
-<a href="maps\New Ofcol.png">New Ofcol</a><br />
-<a href="maps\New Thalos.png">New Thalos</a><br />
-<a href="maps\Nhalijah, the Astral Prison.png">Nhalijah, the Astral Prison</a><br />
-<a href="maps\Nirvana.png">Nirvana</a><br />
-<a href="maps\Ofcol.png">Ofcol</a><br />
-<a href="maps\Orduno's Forge.png">Orduno's Forge</a><br />
-<a href="maps\Outskirts of Astoria.png">Outskirts of Astoria</a><br />
-<a href="maps\Plains.png">Plains</a><br />
-<a href="maps\Pyramid.png">Pyramid</a><br />
-<a href="maps\Quifael's.png">Quifael's</a><br />
-<a href="maps\Rakshasa Tower.png">Rakshasa Tower</a><br />
-<a href="maps\Ramadahn.png">Ramadahn</a><br />
-<a href="maps\Rivenrock Canyon.png">Rivenrock Canyon</a><br />
-<a href="maps\Ruins of Drannor.png">Ruins of Drannor</a><br />
-<a href="maps\Sands of Sorrow.png">Sands of Sorrow</a><br />
-<a href="maps\Sewers.png">Sewers</a><br />
-<a href="maps\Shadowlands.png">Shadowlands</a><br />
-<a href="maps\Shire.png">Shire</a><br />
-<a href="maps\Shrine of Erifdel.png">Shrine of Erifdel</a><br />
-<a href="maps\Shrine of Valinor.png">Shrine of Valinor</a><br />
-<a href="maps\Skills.png">Skills</a><br />
-<a href="maps\strange carnival.are.png">strange carnival.are</a><br />
-<a href="maps\Summer Road.png">Summer Road</a><br />
-<a href="maps\Sylvan Cabal.png">Sylvan Cabal</a><br />
-<a href="maps\Sywilm Woods.png">Sywilm Woods</a><br />
-<a href="maps\Tarvalon.png">Tarvalon</a><br />
-<a href="maps\Temple of the Fallen.png">Temple of the Fallen</a><br />
-<a href="maps\Thalos.png">Thalos</a><br />
-<a href="maps\The Blue Tower.png">The Blue Tower</a><br />
-<a href="maps\The Coliseum.png">The Coliseum</a><br />
-<a href="maps\The Dale.png">The Dale</a><br />
-<a href="maps\The Docks.png">The Docks</a><br />
-<a href="maps\The Dragon Sea.png">The Dragon Sea</a><br />
-<a href="maps\The Dragon Tower.png">The Dragon Tower</a><br />
-<a href="maps\The Elven Stronghold.png">The Elven Stronghold</a><br />
-<a href="maps\The Green Tower.png">The Green Tower</a><br />
-<a href="maps\The Hobo Train Yard.png">The Hobo Train Yard</a><br />
-<a href="maps\The Minotaur Maze.png">The Minotaur Maze</a><br />
-<a href="maps\The Naiadian Sea.png">The Naiadian Sea</a><br />
-<a href="maps\The North Road.png">The North Road</a><br />
-<a href="maps\The Obsidian Order.png">The Obsidian Order</a><br />
-<a href="maps\The Pit of Despair.png">The Pit of Despair</a><br />
-<a href="maps\The Red Tower.png">The Red Tower</a><br />
-<a href="maps\The Southern Swamps.png">The Southern Swamps</a><br />
-<a href="maps\The Valley Inn.png">The Valley Inn</a><br />
-<a href="maps\The Western Plains.png">The Western Plains</a><br />
-<a href="maps\Tigris River.png">Tigris River</a><br />
-<a href="maps\Troll Den.png">Troll Den</a><br />
-<a href="maps\UnderDark.png">UnderDark</a><br />
-<a href="maps\Urtazi.png">Urtazi</a><br />
-<a href="maps\Valley of the Elves.png">Valley of the Elves</a><br />
-<a href="maps\Varggin Shih.png">Varggin Shih</a><br />
-<a href="maps\Vestibule of the Kings.png">Vestibule of the Kings</a><br />
-<a href="maps\Visham.png">Visham</a><br />
-<a href="maps\Western Shatar Road.png">Western Shatar Road</a><br />
-<a href="maps\Wyvern's Tower.png">Wyvern's Tower</a><br />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+<style>
+    table.dataTable tbody tr td {
+        color: white !important;
+    }
+    /* Style for header of sorted column */
+    table.dataTable thead .sorting_asc,
+    table.dataTable thead .sorting_desc {
+        background-color: #444 !important; /* Dark grey background */
+        color: white !important; /* White text */
+    }
+    
+    /* Style for data cells in sorted column */
+    table.dataTable tbody td.sorting_1 {
+        background-color: #444 !important; /* Dark grey background */
+        color: white !important; /* White text */
+    }
+    
+    /* Style for hover state of header */
+    table.dataTable thead th:hover {
+        background-color: #555 !important; /* Slightly lighter grey for hover */
+    }
+    
+    /* Ensure other text remains visible */
+    table.dataTable thead th,
+    table.dataTable tbody td {
+        color: white; /* Default text color */
+    }
+
+    /* Style for hover state of rows */
+    table.dataTable tbody tr:hover {
+        background-color: #f5f5f5 !important; /* Light grey background for row hover */
+    }
+
+    /* Ensure text remains visible when hovering over the sorted column */
+    table.dataTable tbody tr:hover td.sorting_1 {
+        background-color: #555 !important; /* Slightly lighter grey for sorted column hover */
+        color: white !important;
+    }
+
+    /* Style for links in the sorted column */
+    table.dataTable tbody td.sorting_1 a {
+        color: #add8e6 !important; /* Light blue color for links */
+    }
+
+    /* Style for links on hover in the sorted column */
+    table.dataTable tbody td.sorting_1 a:hover {
+        color: #ffffff !important; /* White color for links on hover */
+        text-decoration: underline;
+    }
+
+    /* Hide the "Show X entries" dropdown */
+    .dataTables_length {
+        display: none;
+    }
+
+    /* Adjust the search box position */
+    .dataTables_filter {
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    #areasTable_filter input {
+    color: white;
+    background-color: #333; /* Optional: dark background for better contrast */
+}
+</style>
+<table id="areasTable" class="display">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Minimum Level</th>
+            <th>Maximum Level</th>
+            <th>Credits</th>
+            <th>Map</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        <!-- Table rows will be inserted here by JavaScript -->
+    </tbody>
+</table>
+
+<script>
+    // Initialize the MUDTextColorizer
+    const colorizer = new MUDTextColorizer();
+
+    // Load the areas data
+    fetch('areas.json')
+        .then(response => response.json())
+        .then(data => {
+            const tableBody = document.getElementById('tableBody');
+            
+            data.areas.forEach(area => {
+                const row = tableBody.insertRow();
+                // Process the area name with escapeHTML and colorizer.ColorText
+                row.insertCell(0).innerHTML = area.name; // Use innerHTML to render the HTML
+                row.insertCell(1).textContent = area.minimumlevel;
+                row.insertCell(2).textContent = area.maximumlevel;
+                row.insertCell(3).innerHTML = escapeHTML(area.credits).replaceAll("{{", "{");
+                
+                const mapCell = row.insertCell(4);
+                const mapLink = document.createElement('a');
+                mapLink.href = `maps/${area.name}.png`;
+                mapLink.textContent = 'View Map';
+                mapLink.target = '_blank'; // Open in a new tab
+                mapCell.appendChild(mapLink);
+            });
+
+            // Initialize DataTable
+            $('#areasTable').DataTable({
+                "order": [[0, "asc"]],  // Sort by name initially
+                "columnDefs": [
+                    { "type": "num", "targets": [1, 2] },  // Ensure level columns are sorted numerically
+                    { "type": "html", "targets": [0, 3] }     // Use HTML-aware sorting for the name column
+                ],
+                "ordering": true,  // Enable sorting
+                "paging": false,   // Disable pagination
+                "info": false      // Hide information display
+            });
+        })
+        .catch(error => console.error('Error loading areas data:', error));
+</script>
 <?php 
     $Page->End();
 ?>

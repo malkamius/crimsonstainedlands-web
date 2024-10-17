@@ -186,7 +186,7 @@ AND (:starts_with = '' OR keywords NOT REGEXP CONCAT(
     <div id="alphabetLinks" class="alphabet-links"></div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <script>
     let startsWith = "";
 $(document).ready(function() {
@@ -299,6 +299,7 @@ $(document).ready(function() {
         paginationHtml += '<span class="pageNav" data-page="' + (currentPage < totalPages ? currentPage + 1 : totalPages) + '">Next</span> ';
         paginationHtml += `<span class="pageNav" data-page="${pagination.totalPages}">&gt;&gt;</span>`;
         paginationHtml += '</div>';
+        paginationHtml += '<div class="pagination"><span>' + pagination.totalPages + ' total page(s)</span></div>';
         $('#pagination').html(paginationHtml);
     }
 

@@ -34,11 +34,17 @@ switch ($action) {
 		include("views/help.php");
 		break;
 	default:        
-		$pattern = '/([^\/]+)\.php$/';
-		if (preg_match($pattern, $action, $matches) && file_exists("static/" . $matches[1] . ".php"))
-		{
-			include("static/" . $matches[1] . ".php");
-		}
+		$pattern = '/([^\/]+)\.(php|json)$/';
+        if (preg_match($pattern, $action, $matches) && file_exists("static/" . $matches[1] . "." . $matches[2]))
+        {
+            $file = "static/" . $matches[1] . "." . $matches[2];
+            if ($matches[2] === 'json') {
+                header('Content-Type: application/json');
+                readfile($file);
+            } else {
+                include($file);
+            }
+        }
 		else if($action == "" || $action == "/" || $action == "index" || $action == "index.php")
 		{
 			include("views/main.php");

@@ -280,6 +280,7 @@
 <br><u><b>Level 12</b></u><br>
 <u><b>Supplication:</b></u> cure deafness <br>
 <u><b>Supplication:</b></u> remove curse <br>
+<u><b>Skill:</b></u> pugil <br>
 <br><u><b>Level 13</b></u><br>
 <u><b>Skill:</b></u> hand to hand <br>
 <u><b>Supplication:</b></u> identify <br>
@@ -287,11 +288,13 @@
 <br><u><b>Level 14</b></u><br>
 <u><b>Supplication:</b></u> curse <br>
 <u><b>Skill:</b></u> talismans <br>
+<u><b>Skill:</b></u> headbonk <br>
 </font></td><td style="width: 50%;">
 <u><b>Level 15</b></u><br>
 <u><b>Skill:</b></u> kick <br>
 <u><b>Supplication:</b></u> protection <br>
 <u><b>Supplication:</b></u> refresh <br>
+<u><b>Skill:</b></u> crack <br>
 <br><u><b>Level 16</b></u><br>
 <u><b>Supplication:</b></u> calm <br>
 <u><b>Skill:</b></u> parry <br>
@@ -300,7 +303,6 @@
 <u><b>Supplication:</b></u> create spring <br>
 <br><u><b>Level 18</b></u><br>
 <u><b>Supplication:</b></u> faerie fog <br>
-<u><b>Skill:</b></u> pugil <br>
 <br><u><b>Level 19</b></u><br>
 <u><b>Supplication:</b></u> restoration <br>
 <u><b>Supplication:</b></u> teleport <br>
@@ -351,6 +353,7 @@
 <u><b>Skill:</b></u> spellcraft <br>
 <u><b>Skill:</b></u> dagger <br>
 <u><b>Skill:</b></u> mace <br>
+<u><b>Skill:</b></u> staff <br>
 <u><b>Skill:</b></u> whip <br>
 <u><b>Skill:</b></u> recall <br>
 <u><b>Spell:</b></u> channel heat <br>
@@ -772,6 +775,7 @@ red-bellied newt<br>
 <u><b>Skill:</b></u> dagger <br>
 <u><b>Skill:</b></u> mace <br>
 <u><b>Skill:</b></u> staff <br>
+<u><b>Skill:</b></u> recall <br>
 <u><b>Skill:</b></u> lore <br>
 <u><b>Skill:</b></u> scrolls <br>
 <u><b>Skill:</b></u> talismans <br>
