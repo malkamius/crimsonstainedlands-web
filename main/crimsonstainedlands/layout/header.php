@@ -30,9 +30,15 @@
         </li>   
         <li class="navigation">
             <a href="index.php?action=who"><button>Who's Online</button></a>
-        </li>        
+        </li>     
+        <li class="navigation">
+            <a href="area_list.php"><button>Area List</button></a>
+        </li>   
         <li class="navigation">
             <a href="index.php?action=help"><button>Help Files</button></a>
+        </li>
+        <li class="navigation">
+            <a href="world_map_viewer.php"><button>World Map</button></a>
         </li>
         <li class="navigation">
             <a href="client.php"><button>Play Now!</button></a>

@@ -38,12 +38,17 @@ switch ($action) {
         if (preg_match($pattern, $action, $matches) && file_exists("static/" . $matches[1] . "." . $matches[2]))
         {
             $file = "static/" . $matches[1] . "." . $matches[2];
-            if ($matches[2] === 'json') {
-                header('Content-Type: application/json');
-                readfile($file);
-            } else {
-                include($file);
-            }
+			if(file_exists($file))
+			{
+				if ($matches[2] === 'json') {
+					header('Content-Type: application/json');
+					readfile($file);
+				} else {
+					include($file);
+				}
+			}
+			else
+				include("404.php");
         }
 		else if($action == "" || $action == "/" || $action == "index" || $action == "index.php")
 		{

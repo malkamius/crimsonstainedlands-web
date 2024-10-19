@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiled Image Viewer</title>
+    <title>World Map Viewer</title>
     <style>
         #viewer {
             width: 100%;
@@ -104,6 +104,7 @@
 			// }
 
 			render() {
+				const fallbackSrc = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
 				this.container.innerHTML = '';
 				const visibleWidth = this.container.clientWidth;
 				const visibleHeight = this.container.clientHeight;
@@ -132,6 +133,10 @@
 						img.style.height = `${tileSize}px`;
 						img.style.left = `${col * tileSize + this.position.x * zoomFactor}px`;
 						img.style.top = `${row * tileSize + this.position.y * zoomFactor}px`;
+						img.onerror = function() {
+							this.onerror = null; // Prevents infinite loop if fallback also fails
+							this.src = fallbackSrc;//"/tiles/blank.jpg";
+						};
 						this.container.appendChild(img);
 					}
 				}
