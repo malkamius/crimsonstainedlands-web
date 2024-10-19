@@ -95,10 +95,12 @@
         width: 80%;
         max-width: 600px;
         border-radius: 5px;
-        overflow-y: scroll;
-        max-height: 80vh;
+        max-height: 60%;
     }
-
+    .modal-scroll {
+        overflow-y: scroll;
+        max-height: 200px;
+    }
     .close {
         color: #aaa;
         float: right;
@@ -188,7 +190,7 @@
             });
 
             // Initialize DataTable
-            $('#areasTable').DataTable({
+            const table = $('#areasTable').DataTable({
                 "order": [[0, "asc"]],  // Sort by name initially
                 "columnDefs": [
                     { "type": "num", "targets": [1, 2] },  // Ensure level columns are sorted numerically
@@ -196,11 +198,32 @@
                 ],
                 "ordering": true,  // Enable sorting
                 "paging": false,   // Disable pagination
-                "info": false      // Hide information display
+                "info": false,      // Hide information display
+                "autoWidth": true,
+                "scrollX": true
             });
+            adjustColumnWidths(table);
         })
         .catch(error => console.error('Error loading areas data:', error));
+    function adjustColumnWidths(table) {
+        table.columns().every(function() {
+            const column = this;
+            const header = $(column.header());
+            const maxWidth = Math.max(
+                header.width(),
+                column.nodes().toArray().reduce((max, cell) => Math.max(max, $(cell).width()), 0)
+            );
+            header.width(maxWidth);
+            column.nodes().toArray().forEach(cell => $(cell).width(maxWidth));
+        });
+        table.draw();
+    }
 
+    // Adjust column widths on window resize
+    $(window).resize(function() {
+        const table = $('#areasTable').DataTable();
+        adjustColumnWidths(table);
+    });
         // Function to show area details in modal
     function showAreaDetails(area) {
         const modal = document.getElementById('areaModal');
@@ -218,9 +241,11 @@
             <p><strong>Vnum Range:</strong> ${area.MinimumVnum} - ${area.MaximumVnum}</p>
             <p><strong>Last Edited By:</strong> ${escapeHTML(area.LastEditedBy || 'N/A')}</p>
             <p><strong>Connections:</strong></p>
+            <div class="modal-scroll">
             <ul class="connections-list">
                 ${area.Connections.map(conn => `<li class="listitem"><a href="#" onclick="showConnectedArea('${escapeHTML(conn)}'); return false;">${escapeHTML(conn)}</a></li>`).join('')}
             </ul>
+            </div>
             <a href='/maps/${safeMapName}.png' target="_blank"><img class='map-image' src='/maps/${safeMapName}.png' alt="Area Map"></a>
         `;
 
