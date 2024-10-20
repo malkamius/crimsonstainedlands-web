@@ -1,6 +1,26 @@
-// app.ts
+// app.js
 import { WebSocketManager } from './websocket.js';
 import { ANSITextColorizer } from './color.js';
+import '/node_modules/@xterm/xterm/lib/xterm.js';
+import '/node_modules/@xterm/addon-fit/lib/addon-fit.js';
+
+// var term = new Terminal({rendererType: "canvas",
+//     scrollbar: true,
+//     convertEol: true});
+var term = new Terminal({
+    rows: 40,
+    scrollbar: true,
+    convertEol: true});
+const fitAddon = new FitAddon.FitAddon();
+term.loadAddon(fitAddon);
+term.open(document.getElementById('terminal'));
+// Make the terminal's dimension fit its container
+fitAddon.fit();
+
+// // Optionally, you can make it responsive
+window.addEventListener('resize', function() {
+      fitAddon.fit();
+  });
 const outputDiv = document.getElementById('output');
 const inputField = document.getElementById('input');
 const wsManager = new WebSocketManager(appendToOutput, (message) => { }, //appendToOutput(`> ${message}\n`),
@@ -22,13 +42,14 @@ const keyMap = {
     'Escape': '/selectinput'
 };
 function appendToOutput(message) {
-    const processedMessage = message
-        .replace(/\n/g, '<br>')
-        .replace(/ /g, '&nbsp;')
-        .replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;');
-    const colorizedMessage = textColorizer.ColorText(processedMessage);
-    outputDiv.innerHTML += colorizedMessage;
-    outputDiv.scrollTop = outputDiv.scrollHeight;
+    // const processedMessage = message
+    //     .replace(/\n/g, '<br>')
+    //     .replace(/ /g, '&nbsp;')
+    //     .replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;');
+    // const colorizedMessage = textColorizer.ColorText(processedMessage);
+    // outputDiv.innerHTML += colorizedMessage;
+    // outputDiv.scrollTop = outputDiv.scrollHeight;
+    term.write(message);
 }
 function addToHistory(command) {
     if (command.trim() !== '' && (commandHistory.length == 0 || commandHistory[0] != command)) {
@@ -66,7 +87,7 @@ function sendCommand(command) {
     }
     else if (wsManager.isConnected()) {
         wsManager.sendMessage(command);
-        appendToOutput(`> ${command}\n`);
+        appendToOutput(`${command}\n`);
     }
     else {
         appendToOutput('Not connected. Type /connect to connect to the MUD server.\n');
