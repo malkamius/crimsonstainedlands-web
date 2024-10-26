@@ -18,7 +18,7 @@
             return $this->Content;
         }
 
-        function End() {
+        function End($NoFooter = false) {
             if($this->CaptureStarted)
                 $this->EndCapture();
 

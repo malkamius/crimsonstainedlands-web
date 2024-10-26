@@ -170,9 +170,10 @@ warning
 	font-family: 'Courier New', Courier, monospace;
 	display: flex;
 	flex-direction: column;
-	height: 70vh;
+	/*height: 70vh;*/
 	margin: 0;
 	padding: 20px;
+    height: 100%;
 	box-sizing: border-box;
 	text-align: left;
 }

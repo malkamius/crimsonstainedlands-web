@@ -35,7 +35,8 @@ switch ($action) {
 		break;
 	default:        
 		$pattern = '/([^\/]+)\.(php|json)$/';
-        if (preg_match($pattern, $action, $matches) && file_exists("static/" . $matches[1] . "." . $matches[2]))
+
+        if (preg_match($pattern, $action, $matches))
         {
             $file = "static/" . $matches[1] . "." . $matches[2];
 			if(file_exists($file))
