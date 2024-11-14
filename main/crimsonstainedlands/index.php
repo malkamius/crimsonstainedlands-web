@@ -34,7 +34,7 @@ switch ($action) {
 		include("views/help.php");
 		break;
 	default:        
-		$pattern = '/([^\/]+)\.(php|json)$/';
+		$pattern = '/([^\/]+)\.(php|json|zip)$/';
 
         if (preg_match($pattern, $action, $matches))
         {
@@ -43,6 +43,9 @@ switch ($action) {
 			{
 				if ($matches[2] === 'json') {
 					header('Content-Type: application/json');
+					readfile($file);
+				} else if($matches[2] === 'zip') {
+					header('Content-Type: application/zip');
 					readfile($file);
 				} else {
 					include($file);

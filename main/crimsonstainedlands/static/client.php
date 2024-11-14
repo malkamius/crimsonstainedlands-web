@@ -32,7 +32,7 @@
 	<script type="module">
 		import { App } from '/js/app.js';  // Make sure to include .js extension
 		document.addEventListener('DOMContentLoaded', () => {
-			const app = new App();
+			const app = new App(4003);
 		});
 		document.getElementById("input").select();
 	</script>
