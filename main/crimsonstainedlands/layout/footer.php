@@ -1,5 +1,9 @@
 <!-- views/footer.php -->
     </div>
+<?php
+if(!isset($NoFooter) || !$NoFooter)
+{
+?>
     <script>
         function createUpdatedElement(updatedTime) {
             const updated = document.createElement("div");
@@ -51,10 +55,14 @@
     
     </script>
     <div id="player_count" style="text-align: center;margin: 50px;"></div>
+
     <div style="text-align: center;margin: 50px;">
         <span>Connect to the Crimson Stained Lands at server crimsonstainedlands.net port 4000 <br> 
         ( ip address:port &nbsp;&nbsp;64.224.71.222:4000 &nbsp;&nbsp;)</span>
     </div>
+<?php
+}
+?>
     <footer style="margin: 15px; text-align: center;">
         
         <span>© Crimson Stained Lands - 2024</span>
