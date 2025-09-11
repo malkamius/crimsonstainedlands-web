@@ -35,10 +35,14 @@ switch ($action) {
 		break;
 	default:        
 		$pattern = '/([^\/]+)\.(php|json|zip)$/';
+		if($action == "" || $action == "/" || $action == "index" || $action == "index.php" || $action == "/index.php")
+                {
+                        include("views/main.php");
+                }
 
-        if (preg_match($pattern, $action, $matches))
-        {
-            $file = "static/" . $matches[1] . "." . $matches[2];
+		else if (preg_match($pattern, $action, $matches))
+	        {
+			$file = "static/" . $matches[1] . "." . $matches[2];
 			if(file_exists($file))
 			{
 				if ($matches[2] === 'json') {
@@ -52,11 +56,9 @@ switch ($action) {
 				}
 			}
 			else
+			{
 				include("404.php");
-        }
-		else if($action == "" || $action == "/" || $action == "index" || $action == "index.php")
-		{
-			include("views/main.php");
+			}
 		}
 		else
 		{
