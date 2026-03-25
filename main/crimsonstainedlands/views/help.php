@@ -406,6 +406,12 @@ $(document).ready(function() {
     width: 70vw;
 }
 </style>
+<<<<<<< Updated upstream
 <?php
 $Page->End();
 ?>
+=======
+<?php 
+    $Page->End();
+?>
+>>>>>>> Stashed changes
