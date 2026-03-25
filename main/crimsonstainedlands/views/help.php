@@ -1,25 +1,29 @@
 <?php
 // config/aragond_database.php
-class CSLDatabase {
+class CSLDatabase
+{
     private $host = "localhost";
     private $db_name = "csl";
     private $username = "csl";
     private $password = "csl";
     public $conn;
 
-    public function getConnection() {
+    public function getConnection()
+    {
         $this->conn = null;
         try {
             $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
             $this->conn->exec("set names utf8");
-        } catch(PDOException $exception) {
+        }
+        catch (PDOException $exception) {
             echo "Connection error: " . $exception->getMessage();
         }
         return $this->conn;
     }
 }
 
-function get_help_entries($conn, $filter, $page, $page_size, $starts_with = "") : string {
+function get_help_entries($conn, $filter, $page, $page_size, $starts_with = ""): string
+{
     $page = intval($page);
     $offset = ($page - 1) * $page_size;
 
@@ -69,16 +73,16 @@ ORDER BY REPLACE(keywords, '''', '')
 LIMIT :pagesize OFFSET :offset;";
 
     $stmt = $conn->prepare($sql);
-    
+
     if (!$stmt) {
-        die(json_encode(["error" => "Prepare failed: " . $this->conn->errorInfo()[2]]));
+        die(json_encode(["error" => "Prepare failed: " . $conn->errorInfo()[2]]));
     }
     // Bind parameters
-    $filterParam = $filter;//"%" . $filter . "%";
+    $filterParam = $filter; //"%" . $filter . "%";
     //if($starts_with != "")
     //{
-        //$starts_with = $starts_with . "%";
-        $stmt->bindParam(':starts_with', $starts_with, PDO::PARAM_STR);
+    //$starts_with = $starts_with . "%";
+    $stmt->bindParam(':starts_with', $starts_with, PDO::PARAM_STR);
     //}
     $stmt->bindParam(':filter', $filterParam, PDO::PARAM_STR);
     $stmt->bindParam(':pagesize', $page_size, PDO::PARAM_INT);
@@ -92,12 +96,10 @@ LIMIT :pagesize OFFSET :offset;";
 
     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
     $stmt->closeCursor();
-    if($starts_with == "")
-    {
+    if ($starts_with == "") {
         $countSql = "SELECT COUNT(*) as total FROM helps WHERE keywords LIKE CONCAT('%', :filter, '%')";
     }
-    else
-    {
+    else {
         $countSql = "SELECT COUNT(*) as total FROM helps WHERE keywords LIKE CONCAT('%', :filter, '%') AND (keywords LIKE CONCAT('%''', :starts_with, '%') OR keywords LIKE CONCAT('%', :starts_with, '%'))";
     }
     $countSql = "SELECT count(1) FROM csl.helps
@@ -144,35 +146,31 @@ AND (:starts_with = '' OR keywords NOT REGEXP CONCAT(
     //print_r($response);
     return (json_encode($response));
 }
-    if(isset($_REQUEST['json']) && $_REQUEST['json'] = 1)
-    {
-        $database = new CSLDatabase();
-        $db = $database->getConnection();
-        $filter = "";
-        $page = 1;
-        $page_size = 10;
-        $starts_with = "";
-        if(isset($_REQUEST['filter']))
-        {
-            $filter = $_REQUEST['filter'];
-        }
-        if(isset($_REQUEST['page']))
-        {
-            $page = $_REQUEST['page'];
-        }
-        if(isset($_REQUEST['starts_with']))
-        {
-            $starts_with = $_REQUEST['starts_with'];
-        }
-        $help_entries = get_help_entries($db, $filter, $page, $page_size, $starts_with);
-
-        die($help_entries);
+if (isset($_REQUEST['json']) && $_REQUEST['json'] = 1) {
+    $database = new CSLDatabase();
+    $db = $database->getConnection();
+    $filter = "";
+    $page = 1;
+    $page_size = 10;
+    $starts_with = "";
+    if (isset($_REQUEST['filter'])) {
+        $filter = $_REQUEST['filter'];
     }
+    if (isset($_REQUEST['page'])) {
+        $page = $_REQUEST['page'];
+    }
+    if (isset($_REQUEST['starts_with'])) {
+        $starts_with = $_REQUEST['starts_with'];
+    }
+    $help_entries = get_help_entries($db, $filter, $page, $page_size, $starts_with);
+
+    die($help_entries);
+}
 ?>
-<?php 
-    include 'controllers/PageController.php';
-    $Page->Title = "Helpfiles";
-    $Page->Start();
+<?php
+include 'controllers/PageController.php';
+$Page->Title = "Helpfiles";
+$Page->Start();
 ?>
 <div class="container" style="text-align: center;">
     <h1>Help Files</h1>
@@ -408,6 +406,6 @@ $(document).ready(function() {
     width: 70vw;
 }
 </style>
-<?php 
-    $Page->End();
+<?php
+$Page->End();
 ?>

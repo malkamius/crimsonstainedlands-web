@@ -9,6 +9,37 @@
     human, elf, dwarf, pennatus, orc, and minotaur.  Play as one of our many classes <br>
     including assassin, bard, healer, mage, paladin, ranger, shapeshifter, thief, and warrior.</p>
 
+    <div style="margin:10px">
+        <h3>Races</h3>
+        <ul>
+            <li><b>Human</b>: Balanced stats, suited for any class. (Max: 20 across all stats)</li>
+            <li><b>Elf</b>: Highly intelligent and wise, agile but fragile. (Max: 25 Int, 20 Wis, 22 Dex)</li>
+            <li><b>Dwarf</b>: Tough and strong, boasting high constitution and strength. (Max: 25 Con, 22 Str)</li>
+            <li><b>Orc</b>: Physically imposing with great strength and constitution. (Max: 23 Str, 23 Con)</li>
+            <li><b>Minotaur</b>: Extremely powerful and resilient beings. (Max: 23 Str, 22 Con)</li>
+        </ul>
+
+        <h3>Classes</h3>
+        <ul>
+            <li><b>Warrior</b>: Focus on weapon specialization, decent at taking and dealing damage. Masters shield block, dodge, parry, and feinting.</li>
+            <li><b>Paladin</b>: Takes the lead in combat. Can grant sanctuary to themselves and specialize in either two-handed damage or weapon-and-shield blocking.</li>
+            <li><b>Thief</b>: Excels at subterfuge. Can hide, sneak, pick locks, and incapacitate enemies by knocking them out or binding them.</li>
+            <li><b>Bard</b>: Boosts party morale and health, while dashing enemy spirits with offensive lyrics.</li>
+            <li><b>Mage</b>: Focuses on perfecting elemental magic. Unlocks new elemental spells upon mastering earlier ones.</li>
+            <li><b>Shapeshifter</b>: Masters of transformation, able to change into various animal forms starting at levels 5-8 with unique shapefocus paths.</li>
+            <li><b>Ranger</b>: Excels in the wilderness. Can gather healing herbs, ambush prey, and even forge imbued weapons in the wild.</li>
+            <li><b>Healer</b>: Masters of restoration. Can cleanse maladies, heal friends, and grant blessings, flight, sanctuary, or battle frenzy.</li>
+            <li><b>Assassin</b>: Martial arts specialists with improved kicks, dodging, and parrying skills. Can also bind wounds when hurt.</li>
+        </ul>
+
+        <h3>Alignments & Ethos</h3>
+        <p>Characters are shaped by their Alignment (Good, Neutral, Evil) and Ethos (Lawful/Orderly, Neutral, Chaotic).</p>
+        <ul>
+            <li><b>Good vs. Evil</b>: Slaying characters of the opposite alignment grants bonus experience.</li>
+            <li><b>Ethos</b>: Determines your character's adherence to rules, structure, and individual freedom (Lawful values society and rules; Chaotic values individual freedom and resists external codes; Neutral lies between).</li>
+        </ul>
+    </div>
+
     <p style="margin:10px">There is currently no PvP, but we have plans for arena-style combat in the future.</p>
 
     <p style="margin:10px">You can connect to our MUD off and on at host: <code>crimsonstainedlands.net</code> and port: <code>4000</code></p>
